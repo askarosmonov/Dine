@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakes</title>
+    <link rel="stylesheet" href="./food-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <style>
+    .food {
+        height: 230vh;
+        background: linear-gradient(rgba(12,11,9,0.7), rgba(12,11,9,0.7)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1NmO8cKjqc1S0ma5TUGD6T7UtNgfpuX08Wg&usqp=CAU');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+ </style>
+</head>
+<body>
+    <section class="food">
+        <header>
+            <h1>Cakes</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="veg.html">Foods to eat</a></li>
+                    <li><a href="non-veg.html">Non-Veg</a></li>
+                    <li><a href="ice-cream.html">Ice-Creams</a></li>
+                    <li><a href="milkshake.html">JUiCE</a></li>
+                    <li><a href="juice.html">GROUND FRUIT</a></li>
+                    <li><a href="cake.html">Cakes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <button class="btn-cart">Cart
+                    <i class="fa fa-cart-arrow-down" id="card-icon"></i>
+                    </button>
+                    <div class="cart-count">0</div>
+                </ul>
+            </nav>
+
+
+            <div class="cart">
+                <div class="cart-title">Cart items</div>
+                <div class="cart-content">
+                    <!-- <div class="cart-box">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNzzxYezcS-L1ZK4wF2y6TPhfrEyqdIfNJyA&usqp=CAU" class="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-food-title">Carrot Ricd</div>
+                            <div class="price-box">
+                                <div class="cart-price">Rs.150</div>
+                                <div class="cart-amt">Rs.150</div>
+                            </div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <i class="fa fa-trash cart-remove"></i>
+                    </div>
+
+                    <div class="cart-box">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3jS1L3wO03hfB1xid-0o1_-oMjcixcQvUJg&usqp=CAU" class="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-food-title">Carrot Ricd</div>
+                            <div class="price-box">
+                                <div class="cart-price">Rs.150</div>
+                                <div class="cart-amt">Rs.150</div>
+                            </div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <i class="fa fa-trash cart-remove"></i>
+                    </div> -->
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">Rs.0</div>
+                </div>
+                <button class="btn-buy">Place Order</button>
+                <i class="fa fa-close" id="cart-close"></i>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOb8BxWZ1VchA2UxAICEoeBKKfjv4Y6-0mPw&usqp=CAU" class="food-img">
+                <h2 class="food-title">Black cake</h2>
+                <h3 class="food-price">1000.сом</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_yJzpC2lsnq_S1B6atGhdY-up0o-hvi4B5Q&usqp=CAU" class="food-img">
+                <h2 class="food-title">Black Forest cake</h2>
+                <h3 class="food-price">500.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCBsPF9IfKr3I1nHKw56s7uIs2z7C_hVzgpA&usqp=CAU" class="food-img">
+                <h2 class="food-title">Blueberry cake</h2>
+                <h3 class="food-price">2000.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVk7S2htEJvFkV_XCsblr2GnfPqPAa2cHOYw&usqp=CAU" class="food-img">
+                <h2 class="food-title">Blue Velvet cake</h2>
+                <h3 class="food-price">900.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrDpeDX6mQdSKy84x7QfwtRqbVStYnCC1h0w&usqp=CAU" class="food-img">
+                <h2 class="food-title">Butterscotch cake</h2>
+                <h3 class="food-price">1200.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKX0Ng7btj0alzyKQxTCZrECpy5owvwYFjVQ&usqp=CAU" class="food-img">
+                <h2 class="food-title">Chiffon cake</h2>
+                <h3 class="food-price">780.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShcFdOZBU_yn3uBQdjLfCAJj7t9Q2XHCmq6g&usqp=CAU" class="food-img">
+                <h2 class="food-title">Chaco  Mousse cake</h2>
+                <h3 class="food-price">1800.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5cHZpgJeIVYIXWwWw20kgW60YnohvWjeBtA&usqp=CAU" class="food-img">
+                <h2 class="food-title">Chaco truffle cake</h2>
+                <h3 class="food-price">2000.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRrFBuXqa6-ZcDP-YOPVNm5JCcK6x-OeNKrA&usqp=CAU" class="food-img">
+                <h2 class="food-title">Lava cake</h2>
+                <h3 class="food-price">300.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-MF9xwsRml1ced8OwnfNla-QZm77rJzC-7w&usqp=CAU" class="food-img">
+                <h2 class="food-title">Lolipop cake</h2>
+                <h3 class="food-price">700.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXecaw9FMzsaXsCtaIL2FgNNtZRdPuu073yw&usqp=CAU" class="food-img">
+                <h2 class="food-title">Mirror cake</h2>
+                <h3 class="food-price">900.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs8mqONJaMGl0F9pir1YRaJOCjzAi2vKI85A&usqp=CAU" class="food-img">
+                <h2 class="food-title">Pinata cake</h2>
+                <h3 class="food-price">1100.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmPg_N21rFH4BPcJ7ukRIG0q4fORUP7LhYxg&usqp=CAU" class="food-img">
+                <h2 class="food-title">Pineapple cake</h2>
+                <h3 class="food-price">560.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShzzUwt_z0YCgFv3jovSDdDaIkG57ZMPKBYg&usqp=CAU" class="food-img">
+                <h2 class="food-title">Rainbow cake</h2>
+                <h3 class="food-price">2000.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-8F5CC4ZbyhgMo_RUlli2qLvnp-fZa0qZ3Q&usqp=CAU" class="food-img">
+                <h2 class="food-title">Red velvet cake</h2>
+                <h3 class="food-price">1200.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9f0IQEByDmf81Glb-AQHURZv9ww5K9wQZ7g&usqp=CAU" class="food-img">
+                <h2 class="food-title">Strawberry cake</h2>
+                <h3 class="food-price">1200.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShAx-4IfNCXg2jRQDSgrfART_z_LaJvjKVjA&usqp=CAU" class="food-img">
+                <h2 class="food-title">Tiramisu cake</h2>
+                <h3 class="food-price">850.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLH5ehT0wxFBVvo0IO_zq9HldzQ-XHyyiohg&usqp=CAU" class="food-img">
+                <h2 class="food-title">Vanilla cake</h2>
+                <h3 class="food-price">1200.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2s5YPmPGhGkmyikpZm65_9TnAVhdJqalAzaIRZaiDaOM2ujUj1oOf2ekh0iWor_2PfQg&usqp=CAU" class="food-img">
+                <h2 class="food-title">Apple cake</h2>
+                <h3 class="food-price">400.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8lH96-SGdZcfjYKHU5CWvvPiW0IxLEn2nng&usqp=CAU" class="food-img">
+                <h2 class="food-title">Cocoa cake</h2>
+                <h3 class="food-price">200.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+           
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html> 

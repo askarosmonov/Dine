@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non-veg Foods</title>
+    <link rel="stylesheet" href="./food-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <style>
+    .food {
+        background: linear-gradient(rgba(12,11,9,0.7), rgba(12,11,9,0.7)), url('https://functionalmedicinecoaching.org/wp-content/uploads/2021/11/pexels-nerfee-mirandilla-3186654-1650x760.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+    }
+ </style>
+</head>
+<body>
+    <section class="food">
+        <header>
+            <h1>Non-vegetarian Foods</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="veg.html">Foods to eat</a></li>
+                    <li><a href="non-veg.html">Non-Veg</a></li>
+                    <li><a href="ice-cream.html">Ice-Creams</a></li>
+                    <li><a href="milkshake.html">JUiCE</a></li>
+                    <li><a href="juice.html">GROUND FRUIT</a></li>
+                    <li><a href="cake.html">Cakes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <button class="btn-cart">Cart
+                    <i class="fa fa-cart-arrow-down" id="card-icon"></i>
+                    </button>
+                    <div class="cart-count">0</div>
+                </ul>
+            </nav>
+
+
+            <div class="cart">
+                <div class="cart-title">Cart items</div>
+                <div class="cart-content">
+                    <!-- <div class="cart-box">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNzzxYezcS-L1ZK4wF2y6TPhfrEyqdIfNJyA&usqp=CAU" class="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-food-title">Carrot Ricd</div>
+                            <div class="price-box">
+                                <div class="cart-price">Rs.150</div>
+                                <div class="cart-amt">Rs.150</div>
+                            </div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <i class="fa fa-trash cart-remove"></i>
+                    </div>
+
+                    <div class="cart-box">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3jS1L3wO03hfB1xid-0o1_-oMjcixcQvUJg&usqp=CAU" class="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-food-title">Carrot Ricd</div>
+                            <div class="price-box">
+                                <div class="cart-price">Rs.150</div>
+                                <div class="cart-amt">Rs.150</div>
+                            </div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <i class="fa fa-trash cart-remove"></i>
+                    </div> -->
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">Rs.0</div>
+                </div>
+                <button class="btn-buy">Place Order</button>
+                <i class="fa fa-close" id="cart-close"></i>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX0dsp_g4npTi9RTX0WU58oC3oZWM33WEa_g&usqp=CAU" class="food-img">
+                <h2 class="food-title">Beef Chukka</h2>
+                <h3 class="food-price">270.сом</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuhHtxz7H6a_0fPx6BDkOqhriZVoqZGW9a6w&usqp=CAU" class="food-img">
+                <h2 class="food-title">Chicken 65</h2>
+                <h3 class="food-price">250.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShfraBv_H4UbsYqW-Qtq39osuhqMfGGEQ_0w&usqp=CAU" class="food-img">
+                <h2 class="food-title">Chicken Biriyani</h2>
+                <h3 class="food-price">400.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmWVL90wC6A2-nVxqjzh3ykmp1WVvidVkR9w&usqp=CAU" class="food-img">
+                <h2 class="food-title">Chicken Chikka</h2>
+                <h3 class="food-price">120.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnKVSp4NrcCMRc1FrPAng3QlIPMNuofA-HGA&usqp=CAU" class="food-img">
+                <h2 class="food-title">Chicken Kabab</h2>
+                <h3 class="food-price">500.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMMrZ4MMQGAHIXUhbLOISkDsM9JTtwIwt_qA&usqp=CAU" class="food-img">
+                <h2 class="food-title">chicken legpiece</h2>
+                <h3 class="food-price">470.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmHHgHCDJVn8nTEi81H3-jK40AhYl_GJ_fCg&usqp=CAU" class="food-img">
+                <h2 class="food-title">chicken Lollipop</h2>
+                <h3 class="food-price">220.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmFIed81I8s3lsaCmxnY0oEEFFZq_Ty6TGMJ3F8vipWVOU4eoz3DVVVgMmKzWu0bAzc7k&usqp=CAU" class="food-img">
+                <h2 class="food-title">Chilli Egg</h2>
+                <h3 class="food-price">200.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVz4-IxI4sM705u09xbHscRSbc8h0tQkrUzw&usqp=CAU" class="food-img">
+                <h2 class="food-title">Egg Bhurji</h2>
+                <h3 class="food-price">250.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFUOKeSf0RvDZvUdkKykAPepCdBvb5JqYnIw&usqp=CAU" class="food-img">
+                <h2 class="food-title">egg biryani</h2>
+                <h3 class="food-price">160.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRewUZMSd3Qo5bWsjJPRv1rLOfSuqPkj_FBVg&usqp=CAU" class="food-img">
+                <h2 class="food-title">Fish Friy</h2>
+                <h3 class="food-price">500.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIwrvdTiy9_JyhIh0_1tmCd1sp-bsvVgEf5UDmQGYt2Vw9LwS6mjIa0Wf0BY6fV_XOnlQ&usqp=CAU" class="food-img">
+                <h2 class="food-title">Big Fish fry</h2>
+                <h3 class="food-price">450.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReBGWsDrQv5oZMjxgHjgD6ILUz9GLgF1fCrQ&usqp=CAU" class="food-img">
+                <h2 class="food-title">grilled chicken</h2>
+                <h3 class="food-price">450.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRERozRMYVDiqf-2Y9tEFSczZZQom0xaN2TFw&usqp=CAU" class="food-img">
+                <h2 class="food-title">Mutton Biriyani</h2>
+                <h3 class="food-price">600.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThCUtw_ZS6rqKUeicSoza0_PjUvY-IdduuRQ&usqp=CAU" class="food-img">
+                <h2 class="food-title">Mutton Chukka</h2>
+                <h3 class="food-price">500.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzm8aWAhdkLscA8g1toM9efW2cJ3uEmPXesA&usqp=CAU" class="food-img">
+                <h2 class="food-title">Mutton Gravy</h2>
+                <h3 class="food-price">370.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYN7iWDT_Cz5A0STeWERvHxwpN8zfHbu5eQWaOXslU6GSbLbriTAr1_QMEcuLYg-RCbFU&usqp=CAU" class="food-img">
+                <h2 class="food-title">Mutton Pepper</h2>
+                <h3 class="food-price">550.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKwiyua1wR_yBPcEKVL3FqvvKp45RRgqxd9A&usqp=CAU" class="food-img">
+                <h2 class="food-title">Tandoori chicken</h2>
+                <h3 class="food-price">700.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjBeXVTncRFHl7N3i2rnBj5GG5bgnyZgrGhA&usqp=CAU" class="food-img">
+                <h2 class="food-title">lagman soup</h2>
+                <h3 class="food-price">200.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkFLnmj0m5ohf1KsZyk5AKHzQOZQNbtNHDmg&usqp=CAU" class="food-img">
+                <h2 class="meat loaf">Tomato Rice</h2>
+                <h3 class="food-price">700.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html> 

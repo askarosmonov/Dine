@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veg Foods</title>
+    <link rel="stylesheet" href="./food-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <style>
+        .food {
+            background: linear-gradient(rgba(12,11,9,0.7), rgba(12,11,9,0.7)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGPOEQC0511tHb0uRvPPmIz8Lfznv4W_9qFA&usqp=CAU');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+     </style>
+    <section class="food">
+        <header>
+            <h1>Vegetarian Foods</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="veg.html">Foods to eat</a></li>
+                    <li><a href="non-veg.html">Non-Veg</a></li>
+                    <li><a href="ice-cream.html">JUiCE</a></li>
+                    <li><a href="milkshake.html">GROUND FRUIT</a></li>
+                    <li><a href="juice.html">Cakes</a></li>
+                    <li><a href="cake.html">Contact</a></li>
+                    <button class="btn-cart">Cart
+                    <i class="fa fa-cart-arrow-down" id="card-icon"></i>
+                    </button>
+                    <div class="cart-count">0</div>
+                </ul>
+            </nav>
+
+
+            <div class="cart">
+                <div class="cart-title">Cart items</div>
+                <div class="cart-content">
+                    <!-- <div class="cart-box">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNzzxYezcS-L1ZK4wF2y6TPhfrEyqdIfNJyA&usqp=CAU" class="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-food-title">Carrot Ricd</div>
+                            <div class="price-box">
+                                <div class="cart-price">Rs.150</div>
+                                <div class="cart-amt">Rs.150</div>
+                            </div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <i class="fa fa-trash cart-remove"></i>
+                    </div>
+
+                    <div class="cart-box">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3jS1L3wO03hfB1xid-0o1_-oMjcixcQvUJg&usqp=CAU" class="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-food-title">Carrot Ricd</div>
+                            <div class="price-box">
+                                <div class="cart-price">Rs.150</div>
+                                <div class="cart-amt">Rs.150</div>
+                            </div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <i class="fa fa-trash cart-remove"></i>
+                    </div> -->
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">Rs.0</div>
+                </div>
+                <button class="btn-buy">Place Order</button>
+                <i class="fa fa-close" id="cart-close"></i>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWxnKFLK_cfKj5y8aJgZpnYDTxR7JFrvOHvw&usqp=CAU" class="food-img">
+                <h2 class="food-title">Fried Rice</h2>
+                <h3 class="food-price">170.сом</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdgaBzlXyOQfgGQAy0DO4qYArqAKV4elGjXw&usqp=CAU" class="food-img">
+                <h2 class="food-title">carrot rice</h2>
+                <h3 class="food-price">180.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4oJJBhB8GApvG7GxaCP_U5Pn2LhOMwEYqGA&usqp=CAU" class="food-img">
+                <h2 class="food-title">Chanamasala</h2>
+                <h3 class="food-price">200.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPBeLkdbivI_SAoUtKae4E3Fr_UOa-7rw46A&usqp=CAU" class="food-img">
+                <h2 class="food-title">Chilli Paneer</h2>
+                <h3 class="food-price">150.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbWaju3vyazk9rP9BC6k6ZkYOhk85LSRrgAw&usqp=CAU" class="food-img">
+                <h2 class="food-title">Cilantrolime</h2>
+                <h3 class="food-price">250.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJJ4TtKxrxWATanshgqAgFuYah4FDLhax_9Q&usqp=CAU" class="food-img">
+                <h2 class="food-title">Chennai Thali</h2>
+                <h3 class="food-price">300.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiJjICh0H73ZG8lruqfeyoOZ0zA0IBpCdcIQ&usqp=CAU" class="food-img">
+                <h2 class="food-title">Coriander Rice</h2>
+                <h3 class="food-price">220.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUkutCpKiyhMcfLLer-irzDku_I64Gu1O0tQ&usqp=CAU" class="food-img">
+                <h2 class="food-title">Curd Rice</h2>
+                <h3 class="food-price">320.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6ZpQywIj6F3cBcwWQ2IffaXqHMla0n-zVaA&usqp=CAU" class="food-img">
+                <h2 class="food-title">Dhal Rice</h2>
+                <h3 class="food-price">160.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="https://vegecravings.com/wp-content/uploads/2017/04/jeera-rice-recipe-step-by-step-instructions.jpg" class="food-img">
+                <h2 class="food-title">Jeera Rice</h2>
+                <h3 class="food-price">210.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnz_7RUIwbZfKz0uzjfCZt4b_mGzACnWpNmw&usqp=CAU" class="food-img">
+                <h2 class="food-title">Lemon Rice</h2>
+                <h3 class="food-price">500.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS35DmekfWwkSLmMNbv90_S_TBq12_OvQ3wmfKOolTc1xS6_Vkae2l8T1DPaSAjGecvBt4&usqp=CAU" class="food-img">
+                <h2 class="food-title">Malaikafta Curry</h2>
+                <h3 class="food-price">450.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm4IqL8aTCRdLGA0UTjM0vGGAtwtRRjauW3g&usqp=CAU" class="food-img">
+                <h2 class="food-title">Meals</h2>
+                <h3 class="food-price">250.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTy2o75i1-5gFXkevBbOjKKWLG6mnJMB8sOw&usqp=CAU" class="food-img">
+                <h2 class="food-title">Palak Paneer</h2>
+                <h3 class="food-price">380.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgdgXVN3qZoDctZTukuzmIH691fnzjB_95Zw&usqp=CAU" class="food-img">
+                <h2 class="food-title">Fried Rice</h2>
+                <h3 class="food-price">310.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfwqA1ZsktdbxXwhbBmUc6bC0NNyy2TYuF3484XOpJ08LAuAEkrSpd1ghOaAhwg2h5pH8&usqp=CAU" class="food-img">
+                <h2 class="food-title">paneer gravy</h2>
+                <h3 class="food-price">170.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe3Q4xY0xtLSIU0RlXGXJ-9NpohpuzDuZxjQ&usqp=CAU" class="food-img">
+                <h2 class="food-title">paneer butter</h2>
+                <h3 class="food-price">350.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb0HrAIZ1xjrjEEhBp9IvO3v_dUBH_DZTWVg&usqp=CAU" class="food-img">
+                <h2 class="food-title">paneer munchurian</h2>
+                <h3 class="food-price">250.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNzzxYezcS-L1ZK4wF2y6TPhfrEyqdIfNJyA&usqp=CAU" class="food-img">
+                <h2 class="food-title">Schezwan Rice</h2>
+                <h3 class="food-price">340.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+            
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3jS1L3wO03hfB1xid-0o1_-oMjcixcQvUJg&usqp=CAU" class="food-img">
+                <h2 class="food-title">Tomato Rice</h2>
+                <h3 class="food-price">700.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream</title>
+    <link rel="stylesheet" href="./food-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <style>
+    .food {
+        background: linear-gradient(rgba(12,11,9,0.7), rgba(12,11,9,0.7)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXAC5cagpgNJzCWrMUkksbUdX8xX4YjNLitg&usqp=CAU');
+        background-size: cover;
+        background-attachment: fixed;
+    }
+ </style>
+</head>
+<body>
+    <section class="food">
+        <header>
+            <h1>Ice Creams</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="veg.html">Foods to eat</a></li>
+                    <li><a href="non-veg.html">Non-Veg</a></li>
+                    <li><a href="ice-cream.html">Ice-Creams</a></li>
+                    <li><a href="milkshake.html">JUiCE</a></li>
+                    <li><a href="juice.html">GROUND FRUIT</a></li>
+                    <li><a href="cake.html">Cakes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <button class="btn-cart">Cart
+                    <i class="fa fa-cart-arrow-down" id="card-icon"></i>
+                    </button>
+                    <div class="cart-count">0</div>
+                </ul>
+            </nav>
+
+
+            <div class="cart">
+                <div class="cart-title">Cart items</div>
+                <div class="cart-content">
+                    <!-- <div class="cart-box">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNzzxYezcS-L1ZK4wF2y6TPhfrEyqdIfNJyA&usqp=CAU" class="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-food-title">Carrot Ricd</div>
+                            <div class="price-box">
+                                <div class="cart-price">Rs.150</div>
+                                <div class="cart-amt">Rs.150</div>
+                            </div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <i class="fa fa-trash cart-remove"></i>
+                    </div>
+
+                    <div class="cart-box">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3jS1L3wO03hfB1xid-0o1_-oMjcixcQvUJg&usqp=CAU" class="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-food-title">Carrot Ricd</div>
+                            <div class="price-box">
+                                <div class="cart-price">Rs.150</div>
+                                <div class="cart-amt">Rs.150</div>
+                            </div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <i class="fa fa-trash cart-remove"></i>
+                    </div> -->
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">Rs.0</div>
+                </div>
+                <button class="btn-buy">Place Order</button>
+                <i class="fa fa-close" id="cart-close"></i>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQDFXNMfqbRaM3lsijfHULLBOBlU3yuwCTQw&usqp=CAU" class="food-img">
+                <h2 class="food-title">Blackcurrant cone</h2>
+                <h3 class="food-price">300.сом</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHuGWuNQ9iCML6I_JLVM-gMLuLlnSetS94SQ&usqp=CAU" class="food-img">
+                <h2 class="food-title">Blue berry cone</h2>
+                <h3 class="food-price">200.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVHDe_dxEXqT3FNl8YQ4thnL_zK8um8NrZNw&usqp=CAU" class="food-img">
+                <h2 class="food-title">Butter Scotch cone</h2>
+                <h3 class="food-price">200.сом</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH8k_TlwAilF9wrA3Fe5_hrCWvMjK54_Kx-A&usqp=CAU" class="food-img">
+                <h2 class="food-title">Cherry Garcia cone</h2>
+                <h3 class="food-price">300.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfiaW87BehcXjasjx_G9A5p3nq56x9adE6MA&usqp=CAU" class="food-img">
+                <h2 class="food-title">Cherry Vanilla cone</h2>
+                <h3 class="food-price">100.сом</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4_SFIYBpsbvzJ7rpe26wVkQioE0QjRAE6yA&usqp=CAU" class="food-img">
+                <h2 class="food-title">Chocolate cone</h2>
+                <h3 class="food-price">200.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRemb3-ApRw-nbroEOFwbLf3ipxuG0IoZLlBg&usqp=CAU" class="food-img">
+                <h2 class="food-title">Chocolate Chip cone</h2>
+                <h3 class="food-price">90.сом</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCxfILLLMyUPET2UsHdhfj2s6hbBtIi4czYQ&usqp=CAU" class="food-img">
+                <h2 class="food-title">Coffee cone</h2>
+                <h3 class="food-price">60.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0mRO5pnzJJdM-cMp-cRLliBHRKKNmRKTw8_M_otnRwNTnylHZGWs9SLZmzGG-R8EiCi8&usqp=CAU" class="food-img">
+                <h2 class="food-title">Cone</h2>
+                <h3 class="food-price">25.сом</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRfF57R8IJVhiQ6YLyw5WDciY9Gn8fxT1P-w&usqp=CAU" class="food-img">
+                <h2 class="food-title">Cookies n Cream</h2>
+                <h3 class="food-price">30.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBFBTyF0xsl7UZ8kMYf4voH84wmzk0Q01bEg&usqp=CAU" class="food-img">
+                <h2 class="food-title">Mango cone</h2>
+                <h3 class="food-price">100.сом</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4TCL7qnED8pe1lQwxeQDPUWDYFGu6FNIK5g&usqp=CAU" class="food-img">
+                <h2 class="food-title">kesar pista</h2>
+                <h3 class="food-price">40.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSoviDiy-y4pBj2Mal4if_hbe72NbskcqgAg&usqp=CAU" class="food-img">
+                <h2 class="food-title">Kulfi</h2>
+                <h3 class="food-price">100.сом</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyEC4_7Xgqk2CAi50zYvI-18ni1EhJuoW68w&usqp=CAU" class="food-img">
+                <h2 class="food-title">Matcha</h2>
+                <h3 class="food-price">80.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiDz3DgkJhSTVgkHOIL91FAPRlaf9TfmxOCw&usqp=CAU" class="food-img">
+                <h2 class="food-title">Mermaid cone</h2>
+                <h3 class="food-price">90.сом</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRre0zB-1SrpbWwY68waXyUy1dRTsAsHABG3fZ48xOu95R67KUw7ybVrDtD3tEB7wiHokE&usqp=CAU" class="food-img">
+                <h2 class="food-title">Moosetracks</h2>
+                <h3 class="food-price">60.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4nsK7_lriUoL_7WjTeObPvP7moDdGWG0Iw&usqp=CAU" class="food-img">
+                <h2 class="food-title">Pista cone</h2>
+                <h3 class="food-price">90.сом</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUtJM2Nm4oFVI7I59YY3FSj-0H3FdT1FPCmg&usqp=CAU" class="food-img">
+                <h2 class="food-title">Red icecream</h2>
+                <h3 class="food-price">60.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOgrTaetVf7Yyj-92Ox3D9lkZ6B4_27K0uIg&usqp=CAU" class="food-img">
+                <h2 class="food-title">Rocky Road cone</h2>
+                <h3 class="food-price">1200.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhM6B-Pm4YvQ7e7NBoPGIrRAPZuXFVloTNFw&usqp=CAU" class="food-img">
+                <h2 class="food-title">Strawberry cone</h2>
+                <h3 class="food-price">200.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <!-- <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT_gJ7_u-JUysJQ5-sMkJjc0NoaeTstKpZww&usqp=CAU" class="food-img">
+                <h2 class="food-title">Tutti-Frutti cone</h2>
+                <h3 class="food-price">70.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZkY-edLMaftTndY7Cw1j5z-8tI-XZN19_Wg&usqp=CAU" class="food-img">
+                <h2 class="food-title">Vanila cone</h2>
+                <h3 class="food-price">90.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3K4UAq99RsKGDUpugAdEO4zrCBAopg4Wixx0_TZTG5dgtKhWlbJrK9KO0pfQSiEcfdag&usqp=CAU" class="food-img">
+                <h2 class="food-title">Vanila cone</h2>
+                <h3 class="food-price">90.coм</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+             -->
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html> 
